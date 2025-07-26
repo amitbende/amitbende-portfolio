@@ -7,97 +7,121 @@
     <meta name="author" content="Amit Bende">
     <title>Amit Bende - Data Scientist Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #141414;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #141414;
             color: #FFFFFF;
+            overflow-x: hidden;
         }
         h1, h2, h3, h4 {
-            font-family: 'Bebas Neue', sans-serif;
-            letter-spacing: 1px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.3px;
         }
-        /* Netflix-style hover effect */
+        /* Netflix-style navbar */
+        .netflix-nav {
+            background: rgba(0, 0, 0, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        /* Netflix red hover effect */
         .netflix-hover:hover {
-            background-color: #E50914;
+            background: #E50914;
+            color: #FFFFFF;
             transform: scale(1.05);
             transition: all 0.3s ease;
         }
+        /* Card styling inspired by Netflix tiles */
+        .netflix-card {
+            background: #1F1F1F;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .netflix-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(229, 9, 20, 0.3);
+        }
+        .netflix-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #E50914;
+            opacity: 0.9;
+        }
         /* Fade-in animation */
-        @keyframes fadeIn {
+        @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
         .animate-fade-in {
-            animation: fadeIn 0.8s ease-out forwards;
+            animation: fadeInUp 0.6s ease-out forwards;
         }
-        /* Netflix-style card */
-        .netflix-card {
-            background-color: #221f1f;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-        .netflix-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        /* Subtle section background */
+        .section-alt-bg {
+            background: #1C1C1C;
         }
     </style>
 </head>
-<body class="bg-[#141414] text-white">
+<body>
     <!-- Navbar -->
-    <nav class="bg-black/90 fixed w-full top-0 z-50 shadow-lg">
+    <nav class="netflix-nav fixed w-full top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-3xl font-bold tracking-wider text-red-600">
+            <div class="text-3xl font-bold text-[#E50914]">
                 <a href="#home">Amit Bende</a>
             </div>
             <div class="space-x-4 md:space-x-6 text-sm md:text-base font-medium flex items-center">
-                <a href="#home" class="hover:text-red-600 transition duration-300">Home</a>
-                <a href="#about" class="hover:text-red-600 transition duration-300">About</a>
-                <a href="#experience" class="hover:text-red-600 transition duration-300">Experience</a>
-                <a href="#projects" class="hover:text-red-600 transition duration-300">Projects</a>
-                <a href="#skills" class="hover:text-red-600 transition duration-300">Skills</a>
-                <a href="#education" class="hover:text-red-600 transition duration-300">Education</a>
-                <a href="#contact" class="hover:text-red-600 transition duration-300">Contact</a>
+                <a href="#home" class="hover:text-[#E50914] transition duration-300">Home</a>
+                <a href="#about" class="hover:text-[#E50914] transition duration-300">About</a>
+                <a href="#experience" class="hover:text-[#E50914] transition duration-300">Experience</a>
+                <a href="#projects" class="hover:text-[#E50914] transition duration-300">Projects</a>
+                <a href="#skills" class="hover:text-[#E50914] transition duration-300">Skills</a>
+                <a href="#education" class="hover:text-[#E50914] transition duration-300">Education</a>
+                <a href="#contact" class="hover:text-[#E50914] transition duration-300">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center pt-24 px-6" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2070');">
+    <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center pt-24 px-6" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2070');">
         <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
             <!-- Text Content -->
             <div class="md:w-1/2 text-center md:text-left animate-fade-in space-y-6">
-                <h1 class="text-5xl md:text-6xl font-extrabold tracking-wider text-white">
-                    Hello, I'm <span class="text-red-600">Amit Bende</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white">
+                    Hello, I'm <span class="text-[#E50914]">Amit Bende</span>
                 </h1>
                 <h2 class="text-2xl md:text-3xl font-medium text-gray-300">
                     Data Scientist | AI Engineer | GenAI Developer
                 </h2>
                 <p class="text-lg text-gray-300 leading-relaxed">
-                    I build intelligent, scalable AI solutions using Machine Learning, NLP, and Generative AI. With 3+ years of experience, I’ve delivered RAG-powered chatbots, document intelligence platforms, and predictive systems using GPT-4, LangChain, Azure, and AWS.
+                    I build intelligent, scalable AI solutions using Machine Learning, Deep Learning, NLP, and Generative AI. With 3+ years of experience, I’ve delivered RAG-powered chatbots, document intelligence platforms, and predictive systems using GPT-4, LangChain, Azure, and AWS.
                 </p>
-                <a href="#contact" class="inline-block bg-red-600 text-white px-6 py-3 rounded font-semibold netflix-hover">
+                <a href="#contact" class="inline-block bg-[#E50914] text-white px-6 py-3 rounded font-semibold netflix-hover">
                     Let's Connect
                 </a>
             </div>
             <!-- Image -->
             <div class="md:w-1/2 flex justify-center animate-fade-in">
                 <div class="relative group">
-                    <img src="amit.png" alt="Amit Bende, Data Scientist" class="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover border-2 border-red-600 shadow-2xl netflix-hover">
-                    <div class="absolute inset-0 rounded-lg bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <img src="amit.png" alt="Amit Bende, Data Scientist" class="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover border-2 border-[#E50914] shadow-lg netflix-hover">
+                    <div class="absolute inset-0 rounded-lg bg-[#E50914]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-[#141414]">
+    <section id="about" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center text-red-600 mb-12 animate-fade-in">About Me</h2>
+            <h2 class="text-5xl font-bold text-center text-[#E50914] mb-12 animate-fade-in">About Me</h2>
             <p class="text-lg text-gray-300 leading-relaxed text-justify mx-auto max-w-4xl">
-                I’m a Data Scientist and AI Engineer with over 3 years of experience in building end-to-end AI/ML solutions across healthcare, BFSI, and telecom domains. My core expertise lies in Machine Learning, NLP, and Generative AI. I specialize in working with transformer-based architectures like BERT, RoBERTa, and GPT, and have hands-on experience developing scalable applications using GPT-4, LangChain, LlamaIndex, Pinecone, and Azure AI Search. I’ve designed and deployed RAG-based chatbots, document Q&A platforms, and financial assistants that extract insights from unstructured documents using LLMs.
+                I’m a Data Scientist and AI Engineer with over 3 years of experience in building end-to-end AI/ML solutions across healthcare, BFSI, and telecom domains. My core expertise lies in Machine Learning, Deep Learning, NLP, and Generative AI (RAG and Agentic AI). I specialize in working with transformer-based architectures like BERT, RoBERTa, and GPT, and have hands-on experience developing scalable applications using GPT-4, LangChain, LlamaIndex, Pinecone, and Azure AI Search. I’ve designed and deployed RAG-based chatbots, document Q&A platforms, and financial assistants that extract insights from unstructured documents using LLMs.
                 <br><br>
                 My tech stack includes Python, Pandas, Scikit-learn, TensorFlow, and Keras for model development, and I’ve built predictive systems for customer churn, document classification, and recommendations. I integrate these with tools like Azure ML Studio, Power BI, and real-time dashboards. For backend integration, I use FastAPI, Flask, and Docker, with deployments on Azure and AWS services like SageMaker, Lambda, and Bedrock. I also follow MLOps practices including CI/CD automation, model versioning, and monitoring.
                 <br><br>
@@ -107,13 +131,13 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-16 md:pb-24 bg-[#221f1f]">
+    <section id="experience" class="py-16 md:pb-24 section-alt-bg">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-red-600 animate-fade-in">Professional Experience</h2>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Professional Experience</h2>
             <div class="space-y-6">
                 <!-- VSIGN Software Ltd -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-red-600">Data Scientist</h3>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Data Scientist</h3>
                     <p class="text-gray-400 font-medium">VSIGN Software Ltd | July 2023 – Present</p>
                     <ul class="list-disc list-inside text-gray-300 mt-3 space-y-2 text-base leading-relaxed">
                         <li>Led development of GenAI solutions from ideation to deployment — built, fine-tuned, and deployed AI models into production.</li>
@@ -125,7 +149,7 @@
                 </div>
                 <!-- Corbus India LLP -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-red-600">Senior Associate – Data Science</h3>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Senior Associate – Data Science</h3>
                     <p class="text-gray-400 font-medium">Corbus India LLP | March 2023 – June 2023</p>
                     <ul class="list-disc list-inside text-gray-300 mt-3 space-y-2 text-base leading-relaxed">
                         <li>Built NLP solutions from scratch to live deployment — fine-tuned transformer models for context-aware document understanding.</li>
@@ -136,7 +160,7 @@
                 </div>
                 <!-- JCO Gas Pipe Ltd -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-red-600">Assistant Engineer</h3>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Assistant Engineer</h3>
                     <p class="text-gray-400 font-medium">JCO Gas Pipe Ltd | April 2019 – October 2021</p>
                     <ul class="list-disc list-inside text-gray-300 mt-3 space-y-2 text-base leading-relaxed">
                         <li>Managed on-ground pipeline projects — from planning and supervision to reporting and execution.</li>
@@ -149,13 +173,13 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 md:py-24 bg-[#141414]">
+    <section id="projects" class="py-16 md:py-24">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-red-600 animate-fade-in">Project Details</h2>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Project Details</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Neo Med Chat -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-red-600">Neo Med Chat - Healthcare Conversational AI</h3>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Neo Med Chat - Healthcare Conversational AI</h3>
                     <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
                     <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
                         <li>Developed a scalable RAG-based chatbot using GPT-4o and Azure AI Search with metadata filtering for enterprise document retrieval.</li>
@@ -167,7 +191,7 @@
                 </div>
                 <!-- Fin Connect -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-red-600">Fin Connect - Intelligent Financial Assistant</h3>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Fin Connect - Intelligent Financial Assistant</h3>
                     <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
                     <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
                         <li>Ingested and preprocessed financial product data, investment documents, and compliance guides.</li>
@@ -178,7 +202,7 @@
                 </div>
                 <!-- Customer Churn Prediction -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-red-600">Customer Churn Prediction</h3>
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Customer Churn Prediction</h3>
                     <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
                     <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
                         <li>Built an end-to-end ML solution in Python to predict churn using telecom/SaaS data, covering preprocessing, feature engineering, training, and evaluation.</li>
@@ -187,18 +211,54 @@
                         <li>Stored models, predictions, and data artifacts securely in Azure Blob Storage.</li>
                     </ul>
                 </div>
+                <!-- Review Intelligent System for Zoom -->
+                <div class="netflix-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Review Intelligent System for Zoom</h3>
+                    <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
+                    <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
+                        <li>Developed a sentiment analysis system using BERT and RoBERTa to classify user reviews for Zoom, enhancing feedback processing.</li>
+                        <li>Preprocessed and tokenized review datasets, fine-tuning BERT and RoBERTa models for improved accuracy in sentiment detection.</li>
+                        <li>Evaluated multiple models including DistilBERT and XLNet, selecting RoBERTa for its superior performance in contextual understanding.</li>
+                        <li>Integrated the system with Azure Functions for real-time review processing and deployed models using Azure ML for scalability.</li>
+                        <li>Implemented data pipelines to store processed reviews and insights in Azure Cosmos DB, enabling actionable feedback for product improvements.</li>
+                    </ul>
+                </div>
+                <!-- Digital Consumer Testing -->
+                <div class="netflix-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Digital Consumer Testing</h3>
+                    <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
+                    <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
+                        <li>Designed and implemented an automated testing framework to analyze consumer behavior across digital platforms using Python and Selenium.</li>
+                        <li>Developed data pipelines to collect and preprocess user interaction data from web and mobile applications for A/B testing and usability analysis.</li>
+                        <li>Integrated machine learning models to predict user preferences and optimize UI/UX based on consumer feedback and behavioral patterns.</li>
+                        <li>Deployed testing workflows on AWS Lambda for scalable, event-driven processing and stored results in AWS S3 for further analysis.</li>
+                        <li>Collaborated with product teams to translate testing insights into actionable design improvements, enhancing user retention and engagement.</li>
+                    </ul>
+                </div>
+                <!-- Sigma Healthcare Services -->
+                <div class="netflix-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Sigma Healthcare Services</h3>
+                    <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
+                    <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
+                        <li>Developed a deep learning-based diagnostic system using CNNs and LSTMs to analyze medical imaging and patient time-series data for early disease detection.</li>
+                        <li>Preprocessed and augmented large datasets of X-rays and EHRs, improving model accuracy with techniques like transfer learning using ResNet50.</li>
+                        <li>Evaluated multiple deep learning architectures, including VGG16 and InceptionV3, optimizing for precision and computational efficiency.</li>
+                        <li>Deployed models on Google Cloud Platform using TensorFlow Serving for real-time inference and integrated with FHIR APIs for seamless EHR access.</li>
+                        <li>Implemented monitoring pipelines with Prometheus and Grafana to track model performance and ensure compliance with healthcare regulations.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 md:py-24 bg-[#221f1f]">
+    <section id="skills" class="py-16 md:py-24 section-alt-bg">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-red-600 animate-fade-in">Skills</h2>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Skills</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Machine Learning & Data Science -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600 mb-4">Machine Learning & Data Science</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Machine Learning & Data Science</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
                         <li>Python (NumPy, Pandas, SciPy, Scikit-learn)</li>
                         <li>Data Visualization: Matplotlib, Seaborn, Plotly</li>
@@ -212,7 +272,7 @@
                 </div>
                 <!-- Deep Learning -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600 mb-4">Deep Learning</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Deep Learning</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
                         <li>ANN, CNN, RNN, LSTM</li>
                         <li>Transfer Learning (e.g. ResNet, MobileNet, VGG)</li>
@@ -223,7 +283,7 @@
                 </div>
                 <!-- Generative AI & LLMs -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600 mb-4">Generative AI & LLMs</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Generative AI & LLMs</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
                         <li>Prompt Engineering & Fine-tuning</li>
                         <li>RAG, Agentic AI, LangChain, LlamaIndex</li>
@@ -236,7 +296,7 @@
                 </div>
                 <!-- Cloud Technologies -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600 mb-4">Cloud Technologies</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Cloud Technologies</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
                         <li><strong>AWS:</strong> EC2, S3, Lambda, SageMaker, Bedrock, Textract, API Gateway</li>
                         <li><strong>Azure:</strong> Azure OpenAI, Form Recognizer, Blob Storage, Web Apps, Functions, API Management, Cosmos DB</li>
@@ -244,7 +304,7 @@
                 </div>
                 <!-- Databases -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600 mb-4">Databases</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Databases</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
                         <li>SQL, MongoDB</li>
                         <li>Joins, Subqueries, Window Functions</li>
@@ -253,7 +313,7 @@
                 </div>
                 <!-- Math & Statistics -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600 mb-4">Math & Statistics</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Math & Statistics</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
                         <li>Probability, Linear Algebra, Statistics</li>
                         <li>Feature Selection: Filter, Wrapper, Embedded</li>
@@ -263,7 +323,7 @@
                 </div>
                 <!-- APIs & Frameworks -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600 mb-4">APIs & Frameworks</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">APIs & Frameworks</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
                         <li>FastAPI</li>
                         <li>Flask</li>
@@ -272,7 +332,7 @@
                 </div>
                 <!-- Deployment & DevOps -->
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600 mb-4">Deployment & DevOps</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Deployment & DevOps</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-2">
                         <li>Docker, Virtual Environments</li>
                         <li>Git, GitHub, Bitbucket</li>
@@ -285,20 +345,20 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-16 md:py-24 bg-[#141414]">
+    <section id="education" class="py-16 md:py-24">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-red-600 animate-fade-in">Education</h2>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Education</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600">Bachelor of Engineering (BE)</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914]">Bachelor of Engineering (BE)</h3>
                     <p class="text-gray-400 font-medium">RTMNU, Nagpur | 2018 | CGPA: 7.95</p>
                 </div>
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600">Higher Secondary Certificate (HSC)</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914]">Higher Secondary Certificate (HSC)</h3>
                     <p class="text-gray-400 font-medium">MPBSE, Bhopal | 2013 | 68.9%</p>
                 </div>
                 <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-red-600">Secondary School Certificate (SSC)</h3>
+                    <h3 class="text-xl font-semibold text-[#E50914]">Secondary School Certificate (SSC)</h3>
                     <p class="text-gray-400 font-medium">MPBSE, Bhopal | 2011 | 76.16%</p>
                 </div>
             </div>
@@ -306,19 +366,19 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 bg-[#221f1f]">
+    <section id="contact" class="py-16 md:py-24 section-alt-bg">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-red-600 animate-fade-in">Contact Me</h2>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Contact Me</h2>
             <div class="flex flex-col items-center text-lg text-gray-300 space-y-4 animate-fade-in">
-                <p>📞 <a href="tel:+919021598612" class="hover:text-red-600 transition duration-300">+91 9021598612</a></p>
-                <p>📧 <a href="mailto:amit.bende722@gmail.com" class="text-red-600 hover:underline">amit.bende722@gmail.com</a></p>
+                <p>📞 <a href="tel:+919021598612" class="hover:text-[#E50914] transition duration-300">+91 9021598612</a></p>
+                <p>📧 <a href="mailto:amit.bende722@gmail.com" class="text-[#E50914] hover:underline">amit.bende722@gmail.com</a></p>
                 <p>📍 C Wing T-302, Collector Colony, Godhani, Nagpur - 440030</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black/90 text-gray-300 py-6">
+    <footer class="bg-[#141414] text-gray-300 py-6">
         <div class="container mx-auto px-4 text-center">
             <p class="text-sm">© 2025 Amit Bende. All rights reserved.</p>
         </div>
@@ -351,9 +411,9 @@
             });
 
             navLinks.forEach(link => {
-                link.classList.remove('text-red-600');
+                link.classList.remove('text-[#E50914]');
                 if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('text-red-600');
+                    link.classList.add('text-[#E50914]');
                 }
             });
         });
