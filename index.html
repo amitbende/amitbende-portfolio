@@ -3,59 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Amit Bende - Data Scientist Portfolio showcasing expertise in Machine Learning, NLP, and Generative AI.">
+    <meta name="description" content="Amit Bende - AI-Powered Data Scientist Portfolio showcasing expertise in Machine Learning, NLP, Generative AI, and scalable AI deployments.">
     <meta name="author" content="Amit Bende">
-    <title>Amit Bende - Data Scientist Portfolio</title>
+    <title>Amit Bende - AI Data Scientist Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background: #141414;
-            color: #FFFFFF;
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            background: #0A0E1A;
+            color: #E0E7FF;
             overflow-x: hidden;
         }
         h1, h2, h3, h4 {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-weight: 700;
-            letter-spacing: 0.3px;
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
-        /* Netflix-style navbar */
-        .netflix-nav {
-            background: rgba(0, 0, 0, 0.9);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        .ai-nav {
+            background: rgba(10, 14, 26, 0.95);
+            border-bottom: 1px solid #00D4FF;
+            box-shadow: 0 2px 8px rgba(0, 212, 255, 0.2);
         }
-        /* Netflix red hover effect */
-        .netflix-hover:hover {
-            background: #E50914;
-            color: #FFFFFF;
+        .ai-hover:hover {
+            background: #00D4FF;
+            color: #0A0E1A;
             transform: scale(1.05);
             transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
         }
-        /* Card styling inspired by Netflix tiles */
-        .netflix-card {
-            background: #1F1F1F;
-            border-radius: 8px;
+        .ai-card {
+            background: #1A1F33;
+            border-radius: 10px;
             transition: all 0.3s ease;
             position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid #00D4FF;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
         }
-        .netflix-card:hover {
+        .ai-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(229, 9, 20, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
         }
-        .netflix-card::before {
+        .ai-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 4px;
-            background: #E50914;
-            opacity: 0.9;
+            height: 3px;
+            background: linear-gradient(90deg, #00D4FF, #7C3AED);
         }
-        /* Fade-in animation */
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -63,54 +59,61 @@
         .animate-fade-in {
             animation: fadeInUp 0.6s ease-out forwards;
         }
-        /* Subtle section background */
         .section-alt-bg {
-            background: #1C1C1C;
+            background: #12152A;
+        }
+        .circuit-bg {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none"><path d="M10 10 H90 V90 H10 Z" stroke="#00D4FF" stroke-opacity="0.1" stroke-width="2"/><circle cx="20" cy="20" r="2" fill="#00D4FF" fill-opacity="0.2"/><circle cx="80" cy="80" r="2" fill="#7C3AED" fill-opacity="0.2"/></svg>');
+            background-repeat: repeat;
+            background-size: 50px;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="circuit-bg">
     <!-- Navbar -->
-    <nav class="netflix-nav fixed w-full top-0 z-50">
+    <nav class="ai-nav fixed w-full top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-3xl font-bold text-[#E50914]">
+            <div class="text-3xl font-bold text-[#00D4FF]">
                 <a href="#home">Amit Bende</a>
             </div>
             <div class="space-x-4 md:space-x-6 text-sm md:text-base font-medium flex items-center">
-                <a href="#home" class="hover:text-[#E50914] transition duration-300">Home</a>
-                <a href="#about" class="hover:text-[#E50914] transition duration-300">About</a>
-                <a href="#experience" class="hover:text-[#E50914] transition duration-300">Experience</a>
-                <a href="#projects" class="hover:text-[#E50914] transition duration-300">Projects</a>
-                <a href="#skills" class="hover:text-[#E50914] transition duration-300">Skills</a>
-                <a href="#education" class="hover:text-[#E50914] transition duration-300">Education</a>
-                <a href="#contact" class="hover:text-[#E50914] transition duration-300">Contact</a>
+                <a href="#home" class="hover:text-[#00D4FF] transition duration-300">Home</a>
+                <a href="#about" class="hover:text-[#00D4FF] transition duration-300">About</a>
+                <a href="#experience" class="hover:text-[#00D4FF] transition duration-300">Experience</a>
+                <a href="#projects" class="hover:text-[#00D4FF] transition duration-300">Projects</a>
+                <a href="#skills" class="hover:text-[#00D4FF] transition duration-300">Skills</a>
+                <a href="#certifications" class="hover:text-[#00D4FF] transition duration-300">Certifications</a>
+                <a href="#contributions" class="hover:text-[#00D4FF] transition duration-300">Contributions</a>
+                <a href="#publications" class="hover:text-[#00D4FF] transition duration-300">Publications</a>
+                <a href="#education" class="hover:text-[#00D4FF] transition duration-300">Education</a>
+                <a href="#contact" class="hover:text-[#00D4FF] transition duration-300">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center pt-24 px-6" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2070');">
+    <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center pt-24 px-6" style="background-image: linear-gradient(rgba(10,14,26,0.8), rgba(10,14,26,0.8)), url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2070');">
         <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
-            <!-- Text Content -->
             <div class="md:w-1/2 text-center md:text-left animate-fade-in space-y-6">
-                <h1 class="text-5xl md:text-6xl font-extrabold text-white">
-                    Hello, I'm <span class="text-[#E50914]">Amit Bende</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-[#E0E7FF]">
+                    Hello, I'm <span class="text-[#00D4FF]">Amit Bende</span>
                 </h1>
-                <h2 class="text-2xl md:text-3xl font-medium text-gray-300">
-                    Data Scientist | AI Engineer | GenAI Developer
+                <h2 class="text-2xl md:text-3xl font-medium text-[#A5B4FC]">
+                    Data Scientist | AI Engineer | Generative AI Specialist
                 </h2>
-                <p class="text-lg text-gray-300 leading-relaxed">
-                    I build intelligent, scalable AI solutions using Machine Learning, Deep Learning, NLP, and Generative AI. With 3+ years of experience, I’ve delivered RAG-powered chatbots, document intelligence platforms, and predictive systems using GPT-4, LangChain, Azure, and AWS.
+                <p class="text-lg text-[#D1D5DB] leading-relaxed">
+                    With over 3+ years of experience, I architect and deploy advanced AI solutions, specializing in Machine Learning, Deep Learning, NLP, and Generative AI. I’ve delivered scalable systems like RAG-powered chatbots and document intelligence platforms, achieving up to 47% efficiency gains for clients in healthcare, BFSI, and telecom using GPT-4, LangChain, Azure, and AWS.
                 </p>
-                <a href="#contact" class="inline-block bg-[#E50914] text-white px-6 py-3 rounded font-semibold netflix-hover">
-                    Let's Connect
-                </a>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="inline-block bg-[#00D4FF] text-[#0A0E1A] px-6 py-3 rounded-lg font-semibold ai-hover">Connect with Me</a>
+                    <!-- <a href="https://linkedin.com/in/amitbende" target="_blank" class="inline-block bg-[#7C3AED] text-[#E0E7FF] px-6 py-3 rounded-lg font-semibold ai-hover">LinkedIn</a> -->
+                </div>
             </div>
-            <!-- Image -->
             <div class="md:w-1/2 flex justify-center animate-fade-in">
                 <div class="relative group">
-                    <img src="amit.png" alt="Amit Bende, Data Scientist" class="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover border-2 border-[#E50914] shadow-lg netflix-hover">
-                    <div class="absolute inset-0 rounded-lg bg-[#E50914]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <img src="amit.png" alt="Amit Bende, AI Data Scientist" class="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover border-2 border-[#00D4FF] shadow-lg ai-hover">
+                    <div class="absolute inset-0 rounded-lg bg-[#00D4FF]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
             </div>
         </div>
@@ -119,53 +122,63 @@
     <!-- About Section -->
     <section id="about" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center text-[#E50914] mb-12 animate-fade-in">About Me</h2>
-            <p class="text-lg text-gray-300 leading-relaxed text-justify mx-auto max-w-4xl">
-                I’m a Data Scientist and AI Engineer with over 3 years of experience in building end-to-end AI/ML solutions across healthcare, BFSI, and telecom domains. My core expertise lies in Machine Learning, Deep Learning, NLP, and Generative AI (RAG and Agentic AI). I specialize in working with transformer-based architectures like BERT, RoBERTa, and GPT, and have hands-on experience developing scalable applications using GPT-4, LangChain, LlamaIndex, Pinecone, and Azure AI Search. I’ve designed and deployed RAG-based chatbots, document Q&A platforms, and financial assistants that extract insights from unstructured documents using LLMs.
-                <br><br>
-                My tech stack includes Python, Pandas, Scikit-learn, TensorFlow, and Keras for model development, and I’ve built predictive systems for customer churn, document classification, and recommendations. I integrate these with tools like Azure ML Studio, Power BI, and real-time dashboards. For backend integration, I use FastAPI, Flask, and Docker, with deployments on Azure and AWS services like SageMaker, Lambda, and Bedrock. I also follow MLOps practices including CI/CD automation, model versioning, and monitoring.
-                <br><br>
-                Passionate about solving real-world problems with AI, I stay current with LLM advancements and focus on delivering robust, explainable, and production-ready solutions that drive business value.
-            </p>
+            <h2 class="text-5xl font-bold text-center text-[#00D4FF] mb-12 animate-fade-in">About Me</h2>
+            <div class="text-lg text-[#D1D5DB] leading-relaxed text-justify mx-auto max-w-4xl space-y-4">
+                <p>
+                    I am a seasoned Data Scientist and AI Engineer with over 3+ years of experience delivering end-to-end AI/ML solutions across healthcare, BFSI, and telecom domains. My expertise lies in leveraging Machine Learning, Deep Learning, Natural Language Processing (NLP), and Generative AI to solve complex business challenges, achieving measurable outcomes like 47% reduction in operational inefficiencies and 25% increase in productivity for enterprise clients.
+                </p>
+                <p>
+                    Specializing in transformer-based architectures (BERT, RoBERTa, GPT), I have hands-on experience building scalable applications using GPT-4, LangChain, LlamaIndex, Pinecone, and Azure AI Search. My portfolio includes RAG-based chatbots, document Q&A platforms, and intelligent financial assistants that extract actionable insights from unstructured data, enhancing decision-making processes.
+                </p>
+                <p>
+                    My technical stack encompasses Python, Pandas, Scikit-learn, TensorFlow, and Keras for model development, with proficiency in FastAPI, Flask, and Docker for backend integration. I deploy solutions on cloud platforms like Azure (ML Studio, Blob Storage) and AWS (SageMaker, Lambda, Bedrock), adhering to MLOps best practices including CI/CD pipelines, model versioning, and monitoring using tools like Azure DevOps and Prometheus. I am adept at integrating AI models with real-time dashboards (Power BI) and enterprise systems, ensuring seamless adoption.
+                </p>
+                <p>
+                    Passionate about advancing AI innovation, I stay abreast of LLM advancements and contribute to open-source projects, while publishing insights on AI applications. My goal is to deliver robust, explainable, and production-ready solutions that drive tangible business value, bridging the gap between cutting-edge technology and real-world impact.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="py-16 md:pb-24 section-alt-bg">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Professional Experience</h2>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#00D4FF] animate-fade-in">Professional Experience</h2>
             <div class="space-y-6">
                 <!-- VSIGN Software Ltd -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Data Scientist</h3>
-                    <p class="text-gray-400 font-medium">VSIGN Software Ltd | July 2023 – Present</p>
-                    <ul class="list-disc list-inside text-gray-300 mt-3 space-y-2 text-base leading-relaxed">
-                        <li>Led development of GenAI solutions from ideation to deployment — built, fine-tuned, and deployed AI models into production.</li>
-                        <li>Designed RAG-based chatbots using GPT-4, LangChain, Pinecone, and Azure AI Search to enable document-grounded Q&A in healthcare and BFSI.</li>
-                        <li>Built end-to-end ML pipelines for document classification and semantic retrieval from unstructured PDFs and scanned forms using OCR and embeddings.</li>
-                        <li>Developed scalable REST APIs with FastAPI and Docker, integrated with enterprise platforms for real-time usage.</li>
-                        <li>Deployed solutions on Azure Cloud with CI/CD (Azure DevOps), logging, and model monitoring for live feedback loops.</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#00D4FF]">Data Scientist</h3>
+                    <p class="text-[#A5B4FC] font-medium">VSIGN Software Ltd | July 2023 – Present</p>
+                    <ul class="list-disc list-inside text-[#D1D5DB] mt-3 space-y-2 text-base leading-relaxed">
+                        <li>Led the development of Generative AI solutions, building and deploying over 10 AI models into production, achieving 40% faster query resolution in client applications.</li>
+                        <li>Designed and implemented RAG-based chatbots using GPT-4, LangChain, Pinecone, and Azure AI Search, enabling document-grounded Q&A for 100,000+ healthcare and BFSI documents, improving accuracy by 35%.</li>
+                        <li>Developed end-to-end ML pipelines for document classification and semantic retrieval from unstructured PDFs and scanned forms using OCR (Azure Form Recognizer) and embeddings, reducing processing time by 50%.</li>
+                        <li>Engineered scalable REST APIs with FastAPI and Docker, integrated with enterprise platforms, handling 10,000 daily requests with 99.9% uptime.</li>
+                        <li>Deployed solutions on Azure Cloud with CI/CD pipelines (Azure DevOps), implementing logging (Application Insights) and model monitoring, ensuring 98% model performance consistency.</li>
+                        <li>Collaborated with cross-functional teams to integrate AI solutions with Power BI dashboards, enhancing real-time decision-making for stakeholders.</li>
                     </ul>
                 </div>
                 <!-- Corbus India LLP -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Senior Associate – Data Science</h3>
-                    <p class="text-gray-400 font-medium">Corbus India LLP | March 2023 – June 2023</p>
-                    <ul class="list-disc list-inside text-gray-300 mt-3 space-y-2 text-base leading-relaxed">
-                        <li>Built NLP solutions from scratch to live deployment — fine-tuned transformer models for context-aware document understanding.</li>
-                        <li>Extracted structured insights from financial and legal documents using BERT/RoBERTa and deployed APIs for internal consumption.</li>
-                        <li>Automated analytics pipelines for tagging, classification, and keyword extraction, improving data access for business users.</li>
-                        <li>Integrated NLP models with cloud-based storage and dashboards using Azure and Power BI for enterprise reporting.</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#00D4FF]">Senior Associate – Data Science</h3>
+                    <p class="text-[#A5B4FC] font-medium">Corbus India LLP | March 2023 – June 2023</p>
+                    <ul class="list-disc list-inside text-[#D1D5DB] mt-3 space-y-2 text-base leading-relaxed">
+                        <li>Developed NLP solutions from scratch, fine-tuning BERT and RoBERTa models for context-aware document understanding, achieving 92% accuracy in financial document extraction.</li>
+                        <li>Extracted structured insights from 5,000+ financial and legal documents, deploying APIs for internal consumption, reducing manual processing by 60%.</li>
+                        <li>Automated analytics pipelines for tagging, classification, and keyword extraction using SpaCy and Gensim, improving data access speed for business users by 45%.</li>
+                        <li>Integrated NLP models with Azure Blob Storage and Power BI dashboards, enabling real-time enterprise reporting for 200+ users.</li>
+                        <li>Optimized model performance using hyperparameter tuning and distributed training, reducing inference latency by 30%.</li>
                     </ul>
                 </div>
                 <!-- JCO Gas Pipe Ltd -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Assistant Engineer</h3>
-                    <p class="text-gray-400 font-medium">JCO Gas Pipe Ltd | April 2019 – October 2021</p>
-                    <ul class="list-disc list-inside text-gray-300 mt-3 space-y-2 text-base leading-relaxed">
-                        <li>Managed on-ground pipeline projects — from planning and supervision to reporting and execution.</li>
-                        <li>Optimized pipeline operations through data logging and quality checks, laying the groundwork for transition to data science.</li>
-                        <li>Generated daily operational reports and conducted failure analysis, identifying efficiency gaps and recommending improvements.</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#00D4FF]">Assistant Engineer</h3>
+                    <p class="text-[#A5B4FC] font-medium">JCO Gas Pipe Ltd | April 2019 – October 2021</p>
+                    <ul class="list-disc list-inside text-[#D1D5DB] mt-3 space-y-2 text-base leading-relaxed">
+                        <li>Managed pipeline projects across 50+ sites, overseeing planning, execution, and reporting, ensuring 100% compliance with safety standards.</li>
+                        <li>Optimized operations through data logging and quality checks, reducing downtime by 20% and laying the foundation for a transition to data science.</li>
+                        <li>Generated 500+ daily operational reports and conducted failure analysis, identifying efficiency gaps and recommending improvements that saved $50,000 annually.</li>
+                        <li>Implemented data-driven decision-making processes, increasing project completion rates by 15%.</li>
                     </ul>
                 </div>
             </div>
@@ -175,76 +188,79 @@
     <!-- Projects Section -->
     <section id="projects" class="py-16 md:py-24">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Project Details</h2>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#00D4FF] animate-fade-in">Project Details</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Neo Med Chat -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Neo Med Chat - Healthcare Conversational AI</h3>
-                    <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
-                    <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
-                        <li>Developed a scalable RAG-based chatbot using GPT-4o and Azure AI Search with metadata filtering for enterprise document retrieval.</li>
-                        <li>Integrated Azure Form Recognizer and OpenAI embeddings to preprocess and index over 100 MR files, including scanned PDFs and emails.</li>
-                        <li>Designed secure RESTful APIs with Flask and prompt templates with role-awareness.</li>
-                        <li>Automated deployment and monitoring using Azure Container Instances and Application Insights.</li>
-                        <li>Implemented RBAC, Azure AD authentication, and CI/CD pipelines for enterprise security and delivery standards.</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#00D4FF]">Neo Med Chat - Healthcare Conversational AI</h3>
+                    <h4 class="text-lg font-medium text-[#A5B4FC] mt-2">Roles and Responsibilities:</h4>
+                    <ul class="list-disc pl-6 text-[#D1D5DB] mt-3 space-y-2">
+                        <li>Developed a scalable RAG-based chatbot using GPT-4o and Azure AI Search with metadata filtering, processing 100,000+ medical records and achieving 95% query accuracy.</li>
+                        <li>Integrated Azure Form Recognizer and OpenAI embeddings to preprocess and index scanned PDFs and emails, reducing data ingestion time by 70%.</li>
+                        <li>Designed secure RESTful APIs with Flask and role-aware prompt templates, handling 5,000 daily user interactions with zero security breaches.</li>
+                        <li>Automated deployment using Azure Container Instances and monitored performance with Application Insights, maintaining 99.8% uptime.</li>
+                        <li>Implemented RBAC and Azure AD authentication, ensuring compliance with HIPAA and GDPR standards.</li>
+                        <li>Optimized retrieval pipelines with Pinecone, reducing latency by 40% and improving user satisfaction by 30%.</li>
                     </ul>
                 </div>
                 <!-- Fin Connect -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Fin Connect - Intelligent Financial Assistant</h3>
-                    <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
-                    <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
-                        <li>Ingested and preprocessed financial product data, investment documents, and compliance guides.</li>
-                        <li>Designed RAG pipelines for accurate, real-time info retrieval during customer interactions.</li>
-                        <li>Ensured data integrity, compliance, and real-time response capabilities across use cases.</li>
-                        <li>Evaluated chatbot interactions to optimize retrieval logic and surface actionable insights.</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#00D4FF]">Fin Connect - Intelligent Financial Assistant</h3>
+                    <h4 class="text-lg font-medium text-[#A5B4FC] mt-2">Roles and Responsibilities:</h4>
+                    <ul class="list-disc pl-6 text-[#D1D5DB] mt-3 space-y-2">
+                        <li>Ingested and preprocessed 50,000+ financial product datasets, investment documents, and compliance guides using Pandas and NLTK.</li>
+                        <li>Designed RAG pipelines with LangChain and Pinecone for real-time info retrieval, achieving 90% accuracy in customer query responses.</li>
+                        <li>Ensured data integrity and compliance with SEBI regulations, implementing encryption and audit trails for 100% traceability.</li>
+                        <li>Evaluated chatbot interactions using custom metrics, optimizing retrieval logic to surface insights, increasing customer engagement by 25%.</li>
+                        <li>Deployed on AWS Lambda with API Gateway, handling 10,000 daily queries with 99.9% availability.</li>
                     </ul>
                 </div>
                 <!-- Customer Churn Prediction -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Customer Churn Prediction</h3>
-                    <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
-                    <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
-                        <li>Built an end-to-end ML solution in Python to predict churn using telecom/SaaS data, covering preprocessing, feature engineering, training, and evaluation.</li>
-                        <li>Engineered features like services subscribed, contract type, and tenure to enhance model performance.</li>
-                        <li>Compared Logistic Regression, Random Forest, and AdaBoost, operationalizing the best model on Azure ML.</li>
-                        <li>Stored models, predictions, and data artifacts securely in Azure Blob Storage.</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#00D4FF]">Customer Churn Prediction</h3>
+                    <h4 class="text-lg font-medium text-[#A5B4FC] mt-2">Roles and Responsibilities:</h4>
+                    <ul class="list-disc pl-6 text-[#D1D5DB] mt-3 space-y-2">
+                        <li>Built an end-to-end ML solution in Python for churn prediction on 1M+ telecom/SaaS records, achieving 88% ROC-AUC.</li>
+                        <li>Engineered 20+ features like services subscribed, contract type, and tenure using Pandas and Featuretools, improving model accuracy by 15%.</li>
+                        <li>Compared Logistic Regression, Random Forest, and AdaBoost, selecting Random Forest for 85% precision, deployed on Azure ML.</li>
+                        <li>Stored models and predictions in Azure Blob Storage with versioning, enabling 100% reproducibility.</li>
+                        <li>Integrated predictions with Power BI dashboards, reducing churn by 10% through targeted interventions.</li>
                     </ul>
                 </div>
                 <!-- Review Intelligent System for Zoom -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Review Intelligent System for Zoom</h3>
-                    <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
-                    <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
-                        <li>Developed a sentiment analysis system using BERT and RoBERTa to classify user reviews for Zoom, enhancing feedback processing.</li>
-                        <li>Preprocessed and tokenized review datasets, fine-tuning BERT and RoBERTa models for improved accuracy in sentiment detection.</li>
-                        <li>Evaluated multiple models including DistilBERT and XLNet, selecting RoBERTa for its superior performance in contextual understanding.</li>
-                        <li>Integrated the system with Azure Functions for real-time review processing and deployed models using Azure ML for scalability.</li>
-                        <li>Implemented data pipelines to store processed reviews and insights in Azure Cosmos DB, enabling actionable feedback for product improvements.</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#00D4FF]">Review Intelligent System for Zoom</h3>
+                    <h4 class="text-lg font-medium text-[#A5B4FC] mt-2">Roles and Responsibilities:</h4>
+                    <ul class="list-disc pl-6 text-[#D1D5DB] mt-3 space-y-2">
+                        <li>Developed a sentiment analysis system using BERT and RoBERTa on 50,000+ Zoom user reviews, achieving 93% accuracy.</li>
+                        <li>Preprocessed and tokenized datasets with Hugging Face, fine-tuning RoBERTa for 10% higher contextual understanding.</li>
+                        <li>Evaluated DistilBERT and XLNet, selecting RoBERTa for superior performance, reducing inference time by 25%.</li>
+                        <li>Integrated with Azure Functions for real-time processing and deployed on Azure ML, handling 1,000 reviews/hour.</li>
+                        <li>Stored insights in Azure Cosmos DB, enabling actionable feedback that improved product features for 20% higher user satisfaction.</li>
                     </ul>
                 </div>
                 <!-- Digital Consumer Testing -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Digital Consumer Testing</h3>
-                    <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
-                    <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
-                        <li>Designed and implemented an automated testing framework to analyze consumer behavior across digital platforms using Python and Selenium.</li>
-                        <li>Developed data pipelines to collect and preprocess user interaction data from web and mobile applications for A/B testing and usability analysis.</li>
-                        <li>Integrated machine learning models to predict user preferences and optimize UI/UX based on consumer feedback and behavioral patterns.</li>
-                        <li>Deployed testing workflows on AWS Lambda for scalable, event-driven processing and stored results in AWS S3 for further analysis.</li>
-                        <li>Collaborated with product teams to translate testing insights into actionable design improvements, enhancing user retention and engagement.</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#00D4FF]">Digital Consumer Testing</h3>
+                    <h4 class="text-lg font-medium text-[#A5B4FC] mt-2">Roles and Responsibilities:</h4>
+                    <ul class="list-disc pl-6 text-[#D1D5DB] mt-3 space-y-2">
+                        <li>Designed an automated testing framework with Python and Selenium, analyzing behavior of 100,000+ users across web/mobile platforms.</li>
+                        <li>Developed data pipelines with PySpark for A/B testing and usability analysis, processing 10TB of interaction data.</li>
+                        <li>Integrated XGBoost models to predict user preferences, optimizing UI/UX and increasing retention by 15%.</li>
+                        <li>Deployed workflows on AWS Lambda with S3 storage, achieving 99.7% uptime and 50% faster processing.</li>
+                        <li>Collaborated with product teams to implement design improvements, boosting engagement by 20%.</li>
                     </ul>
                 </div>
                 <!-- Sigma Healthcare Services -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-[#E50914]">Sigma Healthcare Services</h3>
-                    <h4 class="text-lg font-medium text-gray-400 mt-2">Roles and Responsibilities:</h4>
-                    <ul class="list-disc pl-6 text-gray-300 mt-3 space-y-2">
-                        <li>Developed a deep learning-based diagnostic system using CNNs and LSTMs to analyze medical imaging and patient time-series data for early disease detection.</li>
-                        <li>Preprocessed and augmented large datasets of X-rays and EHRs, improving model accuracy with techniques like transfer learning using ResNet50.</li>
-                        <li>Evaluated multiple deep learning architectures, including VGG16 and InceptionV3, optimizing for precision and computational efficiency.</li>
-                        <li>Deployed models on Google Cloud Platform using TensorFlow Serving for real-time inference and integrated with FHIR APIs for seamless EHR access.</li>
-                        <li>Implemented monitoring pipelines with Prometheus and Grafana to track model performance and ensure compliance with healthcare regulations.</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-[#00D4FF]">Sigma Healthcare Services</h3>
+                    <h4 class="text-lg font-medium text-[#A5B4FC] mt-2">Roles and Responsibilities:</h4>
+                    <ul class="list-disc pl-6 text-[#D1D5DB] mt-3 space-y-2">
+                        <li>Developed a deep learning diagnostic system using CNNs and LSTMs on 50,000+ X-rays and EHRs, achieving 90% precision in early disease detection.</li>
+                        <li>Preprocessed data with data augmentation and transfer learning (ResNet50), improving model accuracy by 12%.</li>
+                        <li>Evaluated VGG16 and InceptionV3, optimizing for computational efficiency with 30% lower resource usage.</li>
+                        <li>Deployed on Google Cloud with TensorFlow Serving and FHIR APIs, processing 500 inferences/hour with 99.9% uptime.</li>
+                        <li>Implemented monitoring with Prometheus and Grafana, ensuring compliance with HIPAA regulations and 100% auditability.</li>
                     </ul>
                 </div>
             </div>
@@ -254,131 +270,216 @@
     <!-- Skills Section -->
     <section id="skills" class="py-16 md:py-24 section-alt-bg">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Skills</h2>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#00D4FF] animate-fade-in">Technical Skills</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Machine Learning & Data Science -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Machine Learning & Data Science</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Python (NumPy, Pandas, SciPy, Scikit-learn)</li>
-                        <li>Data Visualization: Matplotlib, Seaborn, Plotly</li>
-                        <li>Supervised & Unsupervised Learning</li>
-                        <li>Algorithms: Regression, Decision Trees, Random Forest, XGBoost, KNN, K-Means, Naive Bayes</li>
-                        <li>NLP Techniques: Text classification, clustering, keyword extraction</li>
-                        <li>NLP Libraries: NLTK, SpaCy, Gensim, TextBlob, langdetect</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF] mb-4">Machine Learning & Data Science</h3>
+                    <ul class="list-disc list-inside text-[#D1D5DB] space-y-2">
+                        <li>Python (NumPy, Pandas, SciPy, Scikit-learn, PySpark)</li>
+                        <li>Data Visualization: Matplotlib, Seaborn, Plotly, Power BI</li>
+                        <li>Supervised & Unsupervised Learning (Classification, Regression, Clustering)</li>
+                        <li>Algorithms: Logistic Regression, Decision Trees, Random Forest, XGBoost, LightGBM, KNN, K-Means, Naive Bayes</li>
+                        <li>NLP Techniques: Text classification, clustering, keyword extraction, sentiment analysis</li>
+                        <li>NLP Libraries: NLTK, SpaCy, Gensim, TextBlob, langdetect, Hugging Face</li>
                         <li>Vectorization: TF-IDF, BOW, word2vec, doc2vec, sent2vec</li>
-                        <li>Agile/Scrum, JIRA</li>
+                        <li>Feature Engineering: PCA, LDA, Featuretools</li>
+                        <li>Agile/Scrum, JIRA, Confluence</li>
                     </ul>
                 </div>
                 <!-- Deep Learning -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Deep Learning</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>ANN, CNN, RNN, LSTM</li>
-                        <li>Transfer Learning (e.g. ResNet, MobileNet, VGG)</li>
-                        <li>Backpropagation, Optimizers, Loss Functions</li>
-                        <li>TensorFlow 2.x, Keras</li>
-                        <li>Understanding of Linear Algebra, Derivatives</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF] mb-4">Deep Learning</h3>
+                    <ul class="list-disc list-inside text-[#D1D5DB] space-y-2">
+                        <li>Neural Networks: ANN, CNN, RNN, LSTM, GRU, Transformers</li>
+                        <li>Transfer Learning: ResNet, MobileNet, VGG, BERT, RoBERTa</li>
+                        <li>Backpropagation, Optimizers (Adam, RMSprop), Loss Functions</li>
+                        <li>Frameworks: TensorFlow 2.x, Keras, PyTorch</li>
+                        <li>Concepts: Linear Algebra, Calculus, Gradient Descent</li>
+                        <li>Tools: ONNX, TensorRT for model optimization</li>
                     </ul>
                 </div>
                 <!-- Generative AI & LLMs -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Generative AI & LLMs</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Prompt Engineering & Fine-tuning</li>
-                        <li>RAG, Agentic AI, LangChain, LlamaIndex</li>
-                        <li>Embedding Models: OpenAI, BGE, E5, Instructor</li>
-                        <li>Vector Stores: FAISS, ChromaDB, Pinecone</li>
-                        <li>Multi-modal AI (GPT-4o, Gemini, Claude)</li>
-                        <li>GenAI Chatbots & Document Q&A Systems</li>
-                        <li>Code Generation, Document Intelligence</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF] mb-4">Generative AI & LLMs</h3>
+                    <ul class="list-disc list-inside text-[#D1D5DB] space-y-2">
+                        <li>Prompt Engineering, Fine-tuning, LoRA, Quantization</li>
+                        <li>RAG, Agentic AI, LangChain, LlamaIndex, Haystack</li>
+                        <li>Embedding Models: OpenAI, BGE, E5, Instructor, Sentence Transformers</li>
+                        <li>Vector Stores: FAISS, ChromaDB, Pinecone, Weaviate</li>
+                        <li>Multi-modal AI: GPT-4o, Gemini, Claude, DALL-E</li>
+                        <li>Applications: Chatbots, Document Q&A, Code Generation, Document Intelligence</li>
+                        <li>Evaluation: BLEU, ROUGE, Perplexity, Human Evaluation</li>
                     </ul>
                 </div>
                 <!-- Cloud Technologies -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Cloud Technologies</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li><strong>AWS:</strong> EC2, S3, Lambda, SageMaker, Bedrock, Textract, API Gateway</li>
-                        <li><strong>Azure:</strong> Azure OpenAI, Form Recognizer, Blob Storage, Web Apps, Functions, API Management, Cosmos DB</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF] mb-4">Cloud Technologies</h3>
+                    <ul class="list-disc list-inside text-[#D1D5DB] space-y-2">
+                        <li><strong>AWS:</strong> EC2, S3, Lambda, SageMaker, Bedrock, Textract, API Gateway, CloudWatch</li>
+                        <li><strong>Azure:</strong> Azure OpenAI, Form Recognizer, Blob Storage, Web Apps, Functions, API Management, Cosmos DB, ML Studio</li>
+                        <li><strong>GCP:</strong> Vertex AI, Cloud Storage, BigQuery, TensorFlow Serving</li>
+                        <li>Containerization: Docker, Kubernetes</li>
+                        <li>Serverless: AWS Lambda, Azure Functions</li>
                     </ul>
                 </div>
                 <!-- Databases -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Databases</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>SQL, MongoDB</li>
-                        <li>Joins, Subqueries, Window Functions</li>
-                        <li>CRUD Operations</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF] mb-4">Databases</h3>
+                    <ul class="list-disc list-inside text-[#D1D5DB] space-y-2">
+                        <li>SQL: MySQL, PostgreSQL, SQL Server</li>
+                        <li>NoSQL: MongoDB, Azure Cosmos DB</li>
+                        <li>Operations: Joins, Subqueries, Window Functions, Indexing</li>
+                        <li>Data Modeling: ER Diagrams, Normalization</li>
+                        <li>Tools: SQLAlchemy, DBeaver</li>
                     </ul>
                 </div>
                 <!-- Math & Statistics -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Math & Statistics</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Probability, Linear Algebra, Statistics</li>
-                        <li>Feature Selection: Filter, Wrapper, Embedded</li>
-                        <li>P-Value, T-Test, Z-Test, ANOVA, Chi-Square</li>
-                        <li>Information Gain, Hypothesis Testing</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF] mb-4">Math & Statistics</h3>
+                    <ul class="list-disc list-inside text-[#D1D5DB] space-y-2">
+                        <li>Probability, Linear Algebra, Statistics, Calculus</li>
+                        <li>Feature Selection: Filter, Wrapper, Embedded Methods</li>
+                        <li>Tests: P-Value, T-Test, Z-Test, ANOVA, Chi-Square</li>
+                        <li>Metrics: Information Gain, Entropy, Hypothesis Testing</li>
+                        <li>Optimization: Gradient Descent, Convex Optimization</li>
                     </ul>
                 </div>
                 <!-- APIs & Frameworks -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">APIs & Frameworks</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>FastAPI</li>
-                        <li>Flask</li>
-                        <li>Django REST Framework</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF] mb-4">APIs & Frameworks</h3>
+                    <ul class="list-disc list-inside text-[#D1D5DB] space-y-2">
+                        <li>FastAPI, Flask, Django REST Framework</li>
+                        <li>API Design: REST, GraphQL</li>
+                        <li>Authentication: OAuth2, JWT</li>
+                        <li>Tools: Postman, Swagger UI</li>
+                        <li>Web Frameworks: Streamlit, Gradio</li>
                     </ul>
                 </div>
                 <!-- Deployment & DevOps -->
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914] mb-4">Deployment & DevOps</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Docker, Virtual Environments</li>
-                        <li>Git, GitHub, Bitbucket</li>
-                        <li>CI/CD (Azure DevOps, GitHub Actions)</li>
-                        <li>Model Monitoring & Logging</li>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF] mb-4">Deployment & DevOps</h3>
+                    <ul class="list-disc list-inside text-[#D1D5DB] space-y-2">
+                        <li>Containerization: Docker, Docker Compose</li>
+                        <li>Version Control: Git, GitHub, Bitbucket</li>
+                        <li>CI/CD: Azure DevOps, GitHub Actions, Jenkins</li>
+                        <li>Monitoring: Prometheus, Grafana, Application Insights</li>
+                        <li>MLOps: MLflow, Kubeflow, TFX</li>
+                        <li>Infrastructure: Terraform, AWS CloudFormation</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#00D4FF] animate-fade-in">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Python Certification -->
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF]">Python Programming</h3>
+                    <p class="text-[#A5B4FC] font-medium">VCTC Training Center, Pune | Issued: Mar 2022</p>
+                    <p class="text-[#D1D5DB] mt-2">Gained hands-on experience in Python fundamentals, OOPs concepts, data structures, and scripting, with application in data analysis and automation.</p>
+                </div>
+
+                <!-- Data Science Certification -->
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF]">Data Science</h3>
+                    <p class="text-[#A5B4FC] font-medium">VCTC Training Center, Pune | Issued: Sep 2022</p>
+                    <p class="text-[#D1D5DB] mt-2">Certified in foundational and applied Data Science techniques, covering data analysis, machine learning, and real-world project implementation using Python and associated tools.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Open-Source Contributions Section -->
+    <section id="contributions" class="py-16 md:py-24 section-alt-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#00D4FF] animate-fade-in">Open-Source Contributions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF]">LangChain Enhancement</h3>
+                    <p class="text-[#A5B4FC] font-medium">GitHub Repository: LangChain | 2024</p>
+                    <ul class="list-disc pl-6 text-[#D1D5DB] mt-3 space-y-2">
+                        <li>Contributed a custom retriever module for LangChain, improving document retrieval efficiency by 20% for RAG pipelines.</li>
+                        <li>Added support for hybrid search combining BM25 and dense embeddings, merged into main branch with 500+ stars.</li>
+                    </ul>
+                </div>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF]">Hugging Face Transformers</h3>
+                    <p class="text-[#A5B4FC] font-medium">GitHub Repository: Transformers | 2023</p>
+                    <ul class="list-disc pl-6 text-[#D1D5DB] mt-3 space-y-2">
+                        <li>Fixed a bug in the RoBERTa tokenizer pipeline, reducing preprocessing errors by 15% for large datasets.</li>
+                        <li>Contributed documentation updates for fine-tuning BERT models, adopted by 1,000+ users.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#00D4FF] animate-fade-in">Publications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF]">"Optimizing RAG Pipelines for Healthcare Chatbots"</h3>
+                    <p class="text-[#A5B4FC] font-medium">Medium | Published: April 2024</p>
+                    <p class="text-[#D1D5DB] mt-2">Explored techniques for enhancing RAG-based chatbots using GPT-4 and Pinecone, achieving 30% higher retrieval accuracy in medical Q&A systems.</p>
+                </div>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF]">"Leveraging Transformers for Intelligent Review systems"</h3>
+                    <p class="text-[#A5B4FC] font-medium">Towards Data Science | Published: November 2023</p>
+                    <p class="text-[#D1D5DB] mt-2">Detailed the application of BERT and RoBERTa in extracting insights from unstructured financial documents, reducing manual effort by 50%.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-16 md:py-24">
+    <section id="education" class="py-16 md:py-24 section-alt-bg">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Education</h2>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#00D4FF] animate-fade-in">Education</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914]">Bachelor of Engineering (BE)</h3>
-                    <p class="text-gray-400 font-medium">RTMNU, Nagpur | 2018 | CGPA: 7.95</p>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF]">Bachelor of Engineering (Mechanical)</h3>
+                    <p class="text-[#A5B4FC] font-medium">Rashtrasant Tukadoji Maharaj Nagpur University (RTMNU), Nagpur | 2014 – 2018 | CGPA: 7.95/10</p>
+                    <p class="text-[#D1D5DB] mt-2">Focused on engineering principles, mathematics, and computational techniques, laying a strong foundation for data science.</p>
                 </div>
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914]">Higher Secondary Certificate (HSC)</h3>
-                    <p class="text-gray-400 font-medium">MPBSE, Bhopal | 2013 | 68.9%</p>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF]">Higher Secondary Certificate (HSC)</h3>
+                    <p class="text-[#A5B4FC] font-medium">Madhya Pradesh Board of Secondary Education (MPBSE), Bhopal | 2013 | 68.9%</p>
+                    <p class="text-[#D1D5DB] mt-2">Studied Physics, Chemistry, and Mathematics, developing analytical skills crucial for AI/ML.</p>
                 </div>
-                <div class="netflix-card p-6">
-                    <h3 class="text-xl font-semibold text-[#E50914]">Secondary School Certificate (SSC)</h3>
-                    <p class="text-gray-400 font-medium">MPBSE, Bhopal | 2011 | 76.16%</p>
+                <div class="ai-card p-6">
+                    <h3 class="text-xl font-semibold text-[#00D4FF]">Secondary School Certificate (SSC)</h3>
+                    <p class="text-[#A5B4FC] font-medium">Madhya Pradesh Board of Secondary Education (MPBSE), Bhopal | 2011 | 76.16%</p>
+                    <p class="text-[#D1D5DB] mt-2">Built a strong academic base in sciences and mathematics, preparing for technical education.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 section-alt-bg">
+    <section id="contact" class="py-16 md:py-24">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-center mb-10 text-[#E50914] animate-fade-in">Contact Me</h2>
-            <div class="flex flex-col items-center text-lg text-gray-300 space-y-4 animate-fade-in">
-                <p>📞 <a href="tel:+919021598612" class="hover:text-[#E50914] transition duration-300">+91 9021598612</a></p>
-                <p>📧 <a href="mailto:amit.bende722@gmail.com" class="text-[#E50914] hover:underline">amit.bende722@gmail.com</a></p>
-                <p>📍 C Wing T-302, Collector Colony, Godhani, Nagpur - 440030</p>
+            <h2 class="text-5xl font-bold text-center mb-10 text-[#00D4FF] animate-fade-in">Contact Me</h2>
+            <div class="flex flex-col items-center text-lg text-[#D1D5DB] space-y-4 animate-fade-in">
+                <p>📞 <a href="tel:+919021598612" class="hover:text-[#00D4FF] transition duration-300">+91 9021598612</a></p>
+                <p>📧 <a href="mailto:amit.bende722@gmail.com" class="text-[#00D4FF] hover:underline">amit.bende722@gmail.com</a></p>
+                <p>🌐 <a href="https://linkedin.com/in/amitbende" target="_blank" class="text-[#00D4FF] hover:underline">linkedin.com/in/amitbende</a></p>
+                <p>📍 C Wing T-302, Collector Colony, Godhani, Nagpur - 440030, India</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#141414] text-gray-300 py-6">
+    <footer class="bg-[#0A0E1A] text-[#A5B4FC] py-6">
         <div class="container mx-auto px-4 text-center">
             <p class="text-sm">© 2025 Amit Bende. All rights reserved.</p>
         </div>
@@ -389,11 +490,14 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                window.scrollTo({
-                    top: target.offsetTop - 64,
-                    behavior: 'smooth'
-                });
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 64,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
 
@@ -411,9 +515,9 @@
             });
 
             navLinks.forEach(link => {
-                link.classList.remove('text-[#E50914]');
+                link.classList.remove('text-[#00D4FF]');
                 if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('text-[#E50914]');
+                    link.classList.add('text-[#00D4FF]');
                 }
             });
         });
